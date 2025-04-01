@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+	/* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        /* ========== General Styles ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+       header {
+            background: linear-gradient(90deg, #0047ab, #1e90ff);
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Main Title */
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Navbar */
+        nav {
+            background: #0047ab;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 1;
+        }
+
+        /* Main Section */
+        main {
+            flex: 1; /* Pushes footer to the bottom */
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Subheading */
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #0047ab;
+            margin-bottom: 10px;
+        }
+
+        /* Emphasized Text */
+        .highlight {
+            font-style: italic;
+            font-weight: bold;
+            color: #1e90ff;
+        }
+
+        /* Paragraph Spacing */
+        p {
+            text-align: justify;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+
+        /* Footer Stays at Bottom */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0047ab;
+            color: white;
+            font-size: 16px;
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* ========== Gallery Section ========== */
+        section {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #0a2a66;
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* ========== Animations ========== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gallery</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="C:\kanha\study\famous german inventions\index.html">Home</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\inventions.html">Inventions</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\inventors.html">Inventors</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\gallery.html">Gallery</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\about.html">About</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h2>Images of German Innovations</h2>
+    <div class="gallery-grid">
+        <img src="../images/gallery1.jpg" alt="Gallery Image 1">
+        <img src="../images/gallery2.jpg" alt="Gallery Image 2">
+        <img src="../images/gallery3.jpg" alt="Gallery Image 3">
+        <img src="../images/gallery4.jpg" alt="Gallery Image 4">
+        <img src="../images/gallery5.jpg" alt="Gallery Image 5">
+        <img src="../images/gallery6.jpg" alt="Gallery Image 6">
+        <img src="../images/gallery7.jpg" alt="Gallery Image 7">
+        <img src="../images/gallery8.jpg" alt="Gallery Image 8">
+        <img src="../images/gallery9.jpg" alt="Gallery Image 9">
+        <img src="../images/gallery10.jpg" alt="Gallery Image 10">
+        <img src="../images/gallery11.jpg" alt="Gallery Image 11">
+        <img src="../images/gallery12.jpg" alt="Gallery Image 12">
+        <img src="../images/gallery13.jpg" alt="Gallery Image 13">
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 <span class="highlight">Famous German Inventions</span> | All rights reserved</p>
+</footer>
+
+
+</body>
+</html>

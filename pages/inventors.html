@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventors - Famous German Inventions</title>
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures full screen height */
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(90deg, #0047ab, #1e90ff);
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Main Title */
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Navbar */
+        nav {
+            background: #0047ab;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 1;
+        }
+
+        /* Main Section */
+       .inventors-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .inventors-container div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .inventors-container div:hover {
+            transform: scale(1.05);
+        }
+
+        .inventors-container img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .inventors-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .inventors-container h3 {
+            font-size: 22px;
+            margin-top: 10px;
+            color: #0a2a66;
+        }
+
+        .inventors-container p {
+            font-size: 16px;
+            max-width: 600px;
+        }
+
+        /* Subheading */
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #0047ab;
+            margin-bottom: 10px;
+        }
+
+        /* Emphasized Text */
+        .highlight {
+            font-style: italic;
+            font-weight: bold;
+            color: #1e90ff;
+        }
+
+        /* Paragraph Spacing */
+        p {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+
+        /* Footer Stays at Bottom */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0047ab;
+            color: white;
+            font-size: 16px;
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #1e90ff;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #0047ab;
+            transform: scale(1.05);
+        }
+
+        /* Add space between button and footer */
+        .content {
+            padding-bottom: 40px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Famous German Inventors</h1>
+    <p>The minds behind the greatest innovations</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="C:\kanha\study\famous german inventions\index.html">Home</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\inventions.html">Inventions</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\inventors.html">Inventors</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\gallery.html">Gallery</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\about.html">About</a></li>
+    </ul>
+</nav>
+<section class="inventors-container">
+    <h2>🌟 Great German Inventors</h2>
+    
+    <div>
+        <img src="../images/karl_benz.jpg" alt="Karl Benz">
+        <h3>Karl Benz</h3>
+        <p>Inventor of the modern automobile, revolutionizing transportation.</p>
+    </div>
+
+    <div>
+        <img src="../images/wilhelm_roentgen.jpg" alt="Wilhelm Roentgen">
+        <h3>Wilhelm Roentgen</h3>
+        <p>Discovered X-rays, transforming medical diagnostics.</p>
+    </div>
+
+    <div>
+        <img src="../images/johannes_gutenberg.jpg" alt="Johannes Gutenberg">
+        <h3>Johannes Gutenberg</h3>
+        <p>Invented the printing press, making books widely available.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Famous German Inventions | All rights reserved</p>
+</footer>
+
+</body>
+</html>

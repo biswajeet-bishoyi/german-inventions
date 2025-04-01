@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Press</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0047ab, #1e90ff);
+            padding: 20px 0;
+            text-align: center;
+            transition: padding 0.3s ease-in-out;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        nav {
+           background: #0047ab;
+            padding: 15px 0;
+
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #0047ab;
+            margin-bottom: 20px;
+        }
+	.highlight {
+            font-style: italic;
+            font-weight: bold;
+            color: #1e90ff;
+	}
+
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .content-section img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        footer {
+             text-align: center;
+            padding: 20px;
+            background: #0047ab;
+            color: white;
+            font-size: 16px;
+            margin-top: auto;
+
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Printing Press</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="inventions.html">Inventions</a></li>
+        <li><a href="inventors.html">Inventors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="content-section">
+        <h2>Johannes Gutenberg & The Printing Revolution</h2>
+        <img src="../images/gutenberg-press.jpg" alt="Gutenberg Printing Press">
+        <p>Johannes Gutenberg's invention of the printing press in the 15th century was a turning point in history. It revolutionized the spread of knowledge, making books more affordable and widely accessible. Before the printing press, books were hand-copied, a labor-intensive process that made them scarce and expensive. Gutenberg's innovative system of movable type allowed for faster production, leading to an explosion of literacy and the rapid dissemination of ideas across Europe. His first major printed work, the Gutenberg Bible, showcased the potential of this groundbreaking technology.</p>
+        <p>The impact of the printing press extended far beyond literature. It played a crucial role in the Renaissance, Reformation, and the Scientific Revolution by enabling scholars to share their discoveries and ideas with a much broader audience. The standardization of texts improved education and academic research. The printing press also paved the way for newspapers and mass communication, shaping the way societies received and processed information. Gutenberg’s invention remains one of the most significant contributions to human progress, fundamentally changing the way knowledge is preserved and shared.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 <span class="highlight">Famous German Inventions</span> | All rights reserved</p>
+
+</footer>
+
+</body>
+</html>

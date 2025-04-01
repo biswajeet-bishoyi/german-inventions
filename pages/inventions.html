@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous German Inventions</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0047ab, #1e90ff);
+            padding: 20px 0;
+            text-align: center;
+            transition: padding 0.3s ease-in-out;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            background: #0047ab;
+            padding: 15px 0;
+            transition: background 0.3s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #0047ab;
+            margin-bottom: 20px;
+        }
+	 /* Emphasized Text */
+        .highlight {
+            font-style: italic;
+            font-weight: bold;
+            color: #1e90ff;
+	}
+
+        .inventions-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .invention-card {
+            background: white;
+            border: 2px solid #0047ab;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .invention-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .invention-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #1e90ff;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s ease-in-out;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #0047ab;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0047ab;
+            color: white;
+            font-size: 16px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Famous German Inventions</h1>
+    <p><span class="highlight">Innovations that changed the world</span></p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="C:\kanha\study\famous german inventions\index.html">Home</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\inventions.html">Inventions</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\inventors.html">Inventors</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\gallery.html">Gallery</a></li>
+        <li><a href="C:\kanha\study\famous german inventions\pages\about.html">About</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Revolutionary German Inventions</h2>
+    <p>Germany has given the world some of the most influential inventions. From automobiles to X-rays and printing, these breakthroughs have revolutionized industries and everyday life.</p>
+
+    <div class="inventions-grid">
+        <div class="invention-card">
+            <img src="C:\kanha\study\famous german inventions\images\automobile.jpg" alt="Automobile">
+            <h3>🚗 Automobiles</h3>
+            <p>The birth of modern transportation, pioneered by Karl Benz.</p>
+            <a href="C:\kanha\study\famous german inventions\pages\automobiles.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="invention-card">
+            <img src="C:\kanha\study\famous german inventions\images\xray1.jpg" alt="X-ray Machine">
+            <h3>🩻 X-ray Machine</h3>
+            <p>A revolution in medical imaging, discovered by Wilhelm Roentgen.</p>
+            <a href="C:\kanha\study\famous german inventions\pages\xray.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="invention-card">
+            <img src="C:\kanha\study\famous german inventions\images\printing.jpg" alt="Printing Press">
+            <h3>🖨️ Printing Press</h3>
+            <p>Johannes Gutenberg's invention that made books widely accessible.</p>
+            <a href="C:\kanha\study\famous german inventions\pages\printing.html" class="btn">Learn More</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 <span class="highlight">Famous German Inventions</span> | All rights reserved</p>
+</footer>
+
+</body>
+</html>
