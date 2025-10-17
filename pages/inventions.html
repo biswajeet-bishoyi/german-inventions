@@ -17,14 +17,12 @@
             flex-direction: column;
             min-height: 100vh;
             text-align: center;
-            transition: background-color 0.3s ease-in-out;
         }
 
         header {
             background: linear-gradient(90deg, #0047ab, #1e90ff);
             padding: 20px 0;
             text-align: center;
-            transition: padding 0.3s ease-in-out;
         }
 
         h1 {
@@ -33,17 +31,11 @@
             color: #ffffff;
             margin-bottom: 10px;
             text-align: center;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        h1:hover {
-            transform: scale(1.1);
         }
 
         nav {
             background: #0047ab;
             padding: 15px 0;
-            transition: background 0.3s ease-in-out;
         }
 
         nav ul {
@@ -55,18 +47,21 @@
             gap: 20px;
         }
 
+        nav ul li {
+            display: inline;
+        }
+
         nav a {
             font-size: 18px;
             font-weight: 600;
             color: #ffffff;
             text-decoration: none;
             opacity: 0.8;
-            transition: opacity 0.3s, transform 0.3s;
+            transition: opacity 0.3s;
         }
 
         nav a:hover {
             opacity: 1;
-            transform: translateY(-2px);
         }
 
         main {
@@ -80,12 +75,12 @@
             color: #0047ab;
             margin-bottom: 20px;
         }
-	 /* Emphasized Text */
+
         .highlight {
             font-style: italic;
             font-weight: bold;
             color: #1e90ff;
-	}
+        }
 
         .inventions-grid {
             display: flex;
@@ -124,13 +119,13 @@
             font-weight: 600;
             text-decoration: none;
             border-radius: 8px;
-            transition: background 0.3s, transform 0.2s ease-in-out;
+            transition: background 0.3s, transform 0.2s;
             margin-top: 10px;
         }
 
         .btn:hover {
             background: #0047ab;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         footer {
@@ -152,38 +147,35 @@
 
 <nav>
     <ul>
-        <li><a href="C:\kanha\study\famous german inventions\index.html">Home</a></li>
-        <li><a href="C:\kanha\study\famous german inventions\pages\inventions.html">Inventions</a></li>
-        <li><a href="C:\kanha\study\famous german inventions\pages\inventors.html">Inventors</a></li>
-        <li><a href="C:\kanha\study\famous german inventions\pages\gallery.html">Gallery</a></li>
-        <li><a href="C:\kanha\study\famous german inventions\pages\about.html">About</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="inventions.html">Inventions</a></li>
+        <li><a href="inventors.html">Inventors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
     </ul>
 </nav>
 
 <main>
     <h2>Revolutionary German Inventions</h2>
     <p>Germany has given the world some of the most influential inventions. From automobiles to X-rays and printing, these breakthroughs have revolutionized industries and everyday life.</p>
-
     <div class="inventions-grid">
         <div class="invention-card">
-            <img src="C:\kanha\study\famous german inventions\images\automobile.jpg" alt="Automobile">
+            <img src="../images/automobile.jpg" alt="Automobile">
             <h3>🚗 Automobiles</h3>
             <p>The birth of modern transportation, pioneered by Karl Benz.</p>
-            <a href="C:\kanha\study\famous german inventions\pages\automobiles.html" class="btn">Learn More</a>
+            <a href="automobiles.html" class="btn">Learn More</a>
         </div>
-
         <div class="invention-card">
-            <img src="C:\kanha\study\famous german inventions\images\xray1.jpg" alt="X-ray Machine">
+            <img src="../images/xray1.jpg" alt="X-ray Machine">
             <h3>🩻 X-ray Machine</h3>
             <p>A revolution in medical imaging, discovered by Wilhelm Roentgen.</p>
-            <a href="C:\kanha\study\famous german inventions\pages\xray.html" class="btn">Learn More</a>
+            <a href="xray.html" class="btn">Learn More</a>
         </div>
-
         <div class="invention-card">
-            <img src="C:\kanha\study\famous german inventions\images\printing.jpg" alt="Printing Press">
+            <img src="../images/printing.jpg" alt="Printing Press">
             <h3>🖨️ Printing Press</h3>
             <p>Johannes Gutenberg's invention that made books widely accessible.</p>
-            <a href="C:\kanha\study\famous german inventions\pages\printing.html" class="btn">Learn More</a>
+            <a href="printing.html" class="btn">Learn More</a>
         </div>
     </div>
 </main>
