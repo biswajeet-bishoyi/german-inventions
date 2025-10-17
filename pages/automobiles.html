@@ -23,7 +23,6 @@
             background: linear-gradient(90deg, #0047ab, #1e90ff);
             padding: 20px 0;
             text-align: center;
-            transition: padding 0.3s ease-in-out;
         }
 
         h1 {
@@ -47,18 +46,21 @@
             gap: 20px;
         }
 
+        nav ul li {
+            display: inline;
+        }
+
         nav a {
             font-size: 18px;
             font-weight: 600;
             color: #ffffff;
             text-decoration: none;
             opacity: 0.8;
-            transition: opacity 0.3s, transform 0.3s;
+            transition: opacity 0.3s;
         }
 
         nav a:hover {
             opacity: 1;
-            transform: translateY(-2px);
         }
 
         main {
@@ -72,11 +74,12 @@
             color: #0047ab;
             margin-bottom: 20px;
         }
-	.highlight {
+
+        .highlight {
             font-style: italic;
             font-weight: bold;
             color: #1e90ff;
-	}
+        }
 
         .content-section {
             max-width: 900px;
@@ -95,7 +98,15 @@
             margin: 20px 0;
         }
 
+        p {
+            text-align: justify;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+
         footer {
+            width: 100%;
             text-align: center;
             padding: 20px;
             background: #0047ab;
@@ -120,27 +131,30 @@
         <li><a href="about.html">About</a></li>
     </ul>
 </nav>
-<section class="content-section">
-    <h2>The Birth of Modern Automobiles</h2>
-    <img src="C:\kanha\study\famous german inventions\images\benz-car.jpg" alt="Karl Benz Automobile">
-    <p>
-        The automobile, as we know it today, was revolutionized by Karl Benz in 1885. His invention of the 
-        first gasoline-powered car was a monumental step in the history of transportation. The Benz Patent-Motorwagen 
-        is considered the first true automobile, setting the foundation for the modern automotive industry.
-    </p>
-    <p>
-        Karl Benz’s contribution to the world of mobility is undeniable, as his invention reshaped not only the way people 
-        traveled but also how economies and societies functioned. The invention of the automobile led to the development 
-        of new industries, urbanization, and the creation of an entirely new lifestyle for people.
-    </p>
-    <p>
-        Today, the automobile industry continues to thrive globally, with German companies such as Mercedes-Benz, BMW, and Audi 
-        leading the way in engineering excellence, design, and innovation.
-    </p>
-</section>
+
+<main>
+    <section class="content-section">
+        <h2>The Birth of Modern Automobiles</h2>
+        <img src="../images/benz-car.jpg" alt="Karl Benz Automobile">
+        <p>
+            The automobile, as we know it today, was revolutionized by Karl Benz in 1885. His invention of the 
+            first gasoline-powered car was a monumental step in the history of transportation. The Benz Patent-Motorwagen 
+            is considered the first true automobile, setting the foundation for the modern automotive industry.
+        </p>
+        <p>
+            Karl Benz’s contribution to the world of mobility is undeniable, as his invention reshaped not only the way people 
+            traveled but also how economies and societies functioned. The invention of the automobile led to the development 
+            of new industries, urbanization, and the creation of an entirely new lifestyle for people.
+        </p>
+        <p>
+            Today, the automobile industry continues to thrive globally, with German companies such as Mercedes-Benz, BMW, and Audi 
+            leading the way in engineering excellence, design, and innovation.
+        </p>
+    </section>
+</main>
 
 <footer>
-    <p>© 2025 Famous German Inventions | All rights reserved</p>
+    <p>&copy; 2025 <span class="highlight">Famous German Inventions</span> | All rights reserved</p>
 </footer>
 
 </body>
