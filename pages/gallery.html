@@ -6,36 +6,36 @@
     <title>Gallery</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fa;
+        }
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f5f7fa;
             color: #333;
             text-align: center;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
-
         header {
             background: linear-gradient(90deg, #0047ab, #1e90ff);
             padding: 20px 0;
             text-align: center;
         }
-
         h1 {
             font-size: 42px;
             font-weight: 700;
             color: #ffffff;
             margin-bottom: 10px;
-            text-align: center;
         }
-
         nav {
             background: #0047ab;
             padding: 15px 0;
         }
-
         nav ul {
             list-style: none;
             padding: 0;
@@ -44,11 +44,9 @@
             justify-content: center;
             gap: 20px;
         }
-
         nav ul li {
             display: inline;
         }
-
         nav a {
             font-size: 18px;
             font-weight: 600;
@@ -57,69 +55,53 @@
             opacity: 0.8;
             transition: opacity 0.3s;
         }
-
         nav a:hover {
             opacity: 1;
         }
-
         main {
             flex: 1;
-            text-align: center;
-            padding: 40px 20px;
+            width: 100%;
+            padding: 0;
+            background: #f5f7fa;
         }
-
-        h2 {
-            font-size: 30px;
+        .gallery-section {
+            width: 100%;
+            background: #f5f7fa;
+            padding: 40px 0 0 0;
+        }
+        .gallery-section h2 {
+            font-size: 32px;
             font-weight: 700;
             color: #0047ab;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
         }
-
+        .gallery-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px 24px;
+            padding: 0 40px 40px 40px;
+            justify-items: center;
+            box-sizing: border-box;
+        }
+        .gallery-grid img {
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            background: #fff;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
         .highlight {
             font-style: italic;
             font-weight: bold;
             color: #1e90ff;
         }
-
-        p {
-            text-align: justify;
-            max-width: 800px;
-            margin: 20px auto;
-            line-height: 1.8;
-        }
-
-        section {
-            margin: 40px auto;
-            padding: 20px;
-            max-width: 1200px;
-        }
-
-        section h2 {
-            font-size: 28px;
-            color: #0a2a66;
-            margin-bottom: 20px;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            justify-items: center;
-        }
-
-        .gallery-grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .gallery-grid img:hover {
-            transform: scale(1.05);
-        }
-
         footer {
             width: 100%;
             text-align: center;
@@ -129,14 +111,21 @@
             font-size: 16px;
             margin-top: auto;
         }
+        @media (max-width: 600px) {
+            .gallery-grid {
+                padding: 0 10px 30px 10px;
+                gap: 16px 0;
+            }
+            .gallery-section h2 {
+                font-size: 25px;
+            }
+        }
     </style>
 </head>
 <body>
-
 <header>
     <h1>Gallery</h1>
 </header>
-
 <nav>
     <ul>
         <li><a href="../index.html">Home</a></li>
@@ -146,31 +135,31 @@
         <li><a href="about.html">About</a></li>
     </ul>
 </nav>
-
 <main>
-    <section>
-        <h2>Images of German Innovations</h2>
-        <div class="gallery-grid">
-            <img src="../images/gallery1.jpg" alt="Gallery Image 1">
-            <img src="../images/gallery2.jpg" alt="Gallery Image 2">
-            <img src="../images/gallery3.jpg" alt="Gallery Image 3">
-            <img src="../images/gallery4.jpg" alt="Gallery Image 4">
-            <img src="../images/gallery5.jpg" alt="Gallery Image 5">
-            <img src="../images/gallery6.jpg" alt="Gallery Image 6">
-            <img src="../images/gallery7.jpg" alt="Gallery Image 7">
-            <img src="../images/gallery8.jpg" alt="Gallery Image 8">
-            <img src="../images/gallery9.jpg" alt="Gallery Image 9">
-            <img src="../images/gallery10.jpg" alt="Gallery Image 10">
-            <img src="../images/gallery11.jpg" alt="Gallery Image 11">
-            <img src="../images/gallery12.jpg" alt="Gallery Image 12">
-            <img src="../images/gallery13.jpg" alt="Gallery Image 13">
-        </div>
-    </section>
+  <section class="gallery-section">
+      <h2>Images of German Innovations</h2>
+      <div class="gallery-grid">
+          <img src="../images/gallery1.jpg" alt="Gallery Image 1">
+          <img src="../images/gallery2.jpg" alt="Gallery Image 2">
+          <img src="../images/gallery3.jpg" alt="Gallery Image 3">
+          <img src="../images/gallery4.jpg" alt="Gallery Image 4">
+          <img src="../images/gallery5.jpg" alt="Gallery Image 5">
+          <img src="../images/gallery6.jpg" alt="Gallery Image 6">
+          <img src="../images/gallery7.jpg" alt="Gallery Image 7">
+          <img src="../images/gallery8.jpg" alt="Gallery Image 8">
+          <img src="../images/gallery9.jpg" alt="Gallery Image 9">
+          <img src="../images/gallery10.jpg" alt="Gallery Image 10">
+          <img src="../images/gallery11.jpg" alt="Gallery Image 11">
+          <img src="../images/gallery12.jpg" alt="Gallery Image 12">
+          <img src="../images/gallery13.jpg" alt="Gallery Image 13">
+          <!-- Example how to use your new image:
+          <img src="../images/1AB12DAC-344F-4D2E-970E-C2664372EA33.jpg" alt="Gallery Image 14">
+          -->
+      </div>
+  </section>
 </main>
-
 <footer>
     <p>&copy; 2025 <span class="highlight">Famous German Inventions</span> | All rights reserved</p>
 </footer>
-
 </body>
 </html>
